@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <style>
+            body{
+            background-color: black;
+            }
+            .balls {
+              border-radius: 50%;
+              background: linear-gradient(
+                35deg,
+                #ccffff,
+                #ffcccc
+              );
+              position: fixed;  
+              width: 50px;
+              height: 50px;
+              margin-top: 50px;
+              animation-name: bounce;
+              animation-duration: 2s;
+              animation-iteration-count: infinite;
+            }
+            #ball1 { 
+              left:10%;
+              animation-timing-function: linear;
+            }
+            #ball2 { 
+              left:30%;
+              animation-timing-function:ease;;
+            }
+            #ball3 { 
+              left:50%;
+              animation-timing-function:ease-in;
+            }
+            #ball4 { 
+              left:70%;
+              animation-timing-function:ease-out;
+            }
+            #ball5 { 
+              left:90%;
+              animation-timing-function:ease-in-out;
+            }
+          @keyframes bounce {
+            0% {
+              top: 0px;
+            } 
+            100% {
+              top: 500px;
+            }
+          } 
+          
+          </style>
+    </head>
+    <body>
+        <div class="balls" id="ball1"></div>
+        <div class="balls" id="ball2"></div>
+        <div class="balls" id="ball3"></div>
+        <div class="balls" id="ball4"></div>
+        <div class="balls" id="ball5"></div>
+    </body>
+</html>
